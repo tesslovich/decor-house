@@ -1,0 +1,19 @@
+// Colors
+
+$white: #ffffff;
+$white2: #FBFBFB;
+$grey1: #E1DECE;
+$black: #191919;
+$grey2: #CDCDCB;
+$darkwhite: #6E6E6E;
+$lightdarkwhite: #C4C4C4;
+$sameblack: #101010;
+$sameblack2: #1F1F1F;
+
+
+// Mixin
+@mixin flexCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

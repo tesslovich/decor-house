@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+
+.fontNormal {
+	font-weight: 400;
+}
+
+
+.fontBold {
+	font-weight: 700;
+}
+
+
+.fontRoboto {
+	font-family: 'Roboto', sans-serif;
+}
+
+
+.fontGaramond {
+	font-family: 'Cormorant Garamond', sans-serif;
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+	background-color:	#191919;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+

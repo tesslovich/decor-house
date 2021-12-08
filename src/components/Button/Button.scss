@@ -1,0 +1,23 @@
+@import '../../styles/common.scss';
+
+
+.button__link {
+	text-decoration: none;
+	width: 220px;
+	height: 62px;
+	color: $grey1;
+	border: 1px solid $grey1;
+	@include flexCenter;
+	border-radius: 5px;
+	font-size: 14px;
+	line-height: 16px;
+
+		&:hover {
+			background-color: $grey1;
+			color: $black;
+		}
+
+		&:focus {
+			box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+		}
+}

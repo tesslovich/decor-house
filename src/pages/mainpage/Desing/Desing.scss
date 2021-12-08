@@ -1,0 +1,97 @@
+@import '../../../styles/common.scss';
+
+.desing {
+	width: 100%;
+	overflow: hidden;
+}
+
+
+.desing__wrapper-size {
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+.desing__wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 102px;
+	grid-row-gap: 195px;
+	
+}
+
+
+.desing__description--grid {
+	grid-column-start: 1;
+	grid-row-start: 1;
+}
+
+
+.desing__pictures--grid {
+	grid-column-start: 2
+}
+
+
+.desing__pictures-wrapper {
+	position: relative;
+}
+
+
+.desing__pictures--small {
+	content: '';
+	position: absolute;
+	left: 75%;
+	top: 65%;
+	transform:translate(-50%, -50%);
+}
+
+
+.desing__pictures--small-left {
+	content: '';
+	position: absolute;
+	transform:translate(-50%, -50%);
+	right: 56%;
+	top: 65%;
+}
+
+
+
+.desing__description--span {
+	margin-top: 141px;
+	color: $darkwhite;
+	font-size: 10px;
+	line-height: 26px;
+	text-transform: uppercase;
+}
+
+
+.desing__description--title {
+	width: 360px;
+	font-size: 40px;
+	line-height: 46px;
+	color: $grey1;
+}
+
+
+.desing__description--text {
+	font-size: 16px;
+	line-height: 26px;
+	color: $lightdarkwhite;
+	width: 416px;
+}
+
+
+.qwerty {
+	position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			background-image: url('../../../images/svg/desingFloorThri.svg');
+			background-repeat: no-repeat;
+			top: -55%;
+			right: -20%;
+			width: 500px;
+			height: 386px;
+		}
+}

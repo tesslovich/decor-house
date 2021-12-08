@@ -1,0 +1,113 @@
+@import '../../../styles/common.scss';
+
+
+.aboutus {
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 91px;
+}
+
+
+.aboutus__title {
+	position: relative;
+	font-size: 40px;
+	line-height: 46px;
+	width: 604px;
+	margin: 0 auto;
+	text-align: center;
+	color: $white;
+	padding-bottom: 55px;
+
+		&::after {
+			content: '';
+			position: absolute;
+			border: 1px solid $grey1;
+			width: 196%;
+			bottom: 15%;
+			left: -290px;
+		}
+}
+
+
+.aboutus-slider__wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+
+.aboutus-description__img {
+	padding-left: 10px;
+}
+
+
+.aboutus-description__text {
+	font-size: 16px;
+	line-height: 26px;
+	color: $white;
+}
+
+
+.aboutus-description__advantage {
+	display: flex;
+	justify-content: space-between;
+	color: $white;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+
+.advantage__age {
+	width: 150px;
+	height: 53px;
+	@include flexCenter;
+}
+
+
+.advantage__age--text-one,
+.advantage__successful-projects--text-one,
+.advantage__positive-reviews--text-one {
+	transform: rotate(-90deg);
+}
+
+
+.advantage__age--text-two,
+.advantage__successful-projects--text-two,
+.advantage__positive-reviews--text-two {
+	font-weight: 500;
+	font-size: 45px;
+	line-height: 53px;
+	color: $grey1;
+	margin-right: 5px;
+}
+
+
+.advantage__age--text-thri,
+.advantage__successful-projects--text-thri,
+.advantage__positive-reviews--text-thri {
+	text-transform: uppercase;
+}
+
+
+.advantage__successful-projects {
+	width: 170px;
+	height: 53px;
+	@include flexCenter;
+}
+
+
+.advantage__positive-reviews {
+ 	width: 228px;
+	height: 53px;
+	@include flexCenter;
+}
+
+
+.aboutus__buttons {
+	@include flexCenter;
+	margin-top: 105px;
+}
+
+
+.aboutus__button--first {
+	margin-right: 75px;
+}
