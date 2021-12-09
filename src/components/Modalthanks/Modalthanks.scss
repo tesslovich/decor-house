@@ -1,0 +1,42 @@
+@import '../../styles/common.scss';
+
+.modal-thanks {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 440px;
+	height: 308px;
+	background-color: $grey1;
+	display: flex;
+	flex-direction: column;
+	transform: translate(-50%, -50%);
+	border-radius: 5px;
+}
+
+
+.modal-thanks__title {
+	font-size: 20px;
+	line-height: 23px;
+	text-align: center;
+	font-weight: 500;
+	color: $black;
+	margin: 32px auto 15px auto;
+}
+
+
+.modal-thanks__text {
+	font-size: 16px;
+	line-height: 22px;
+	text-align: center;
+	color: $black;
+	width: 282px;
+	margin: 0 auto 43px auto;
+}
+
+
+.modal-thanks__beatiful {
+	font-size: 16px;
+	line-height: 25px;
+	color: $black;
+	margin: 0 auto;
+}

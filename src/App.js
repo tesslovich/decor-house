@@ -13,12 +13,21 @@ import Partners from './pages/mainpage/Partners/Partners';
 import Footer from './components/Footer/Footer';
 import Modalphone from './components/Modalphone/Modalphone';
 import eventBus from './helpers/eventBus';
+import Modalthanks from './components/Modalthanks/Modalthanks';
 
 
 function App() {
 	const [showModal, setShowModal] = useState(false);
 	eventBus.on('openMobileModal', () => {
-		setShowModal(true)
+		setShowModal(true);
+	})
+	eventBus.on('closeModal', () => {
+		setShowModal(false);
+		setShowModalThanks(false);
+	})
+	const [showModalThanks, setShowModalThanks] = useState(false);
+	eventBus.on('openModalThanks', () => {
+		setShowModalThanks(true);
 	})
 	return (
 		<div>
@@ -33,6 +42,7 @@ function App() {
 			<Partners></Partners>
 			<Footer></Footer>
 			{showModal && <Modalphone></Modalphone>}
+			{showModalThanks && <Modalthanks></Modalthanks>}
 		</div>
 	);
 }
