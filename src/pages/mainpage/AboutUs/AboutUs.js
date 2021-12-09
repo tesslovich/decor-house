@@ -4,26 +4,25 @@ import "slick-carousel/slick/slick-theme.scss";
 import Slider from "react-slick";
 import AboutUsPicture from '../../../images/gallery/aboutUsImg.png';
 import Button from '../../../components/Button/Button';
+import SliderDecorImg from '../../../images/svg/sliderDecorText.svg';
 
 import './AboutUs.scss';
 
 function AboutUs() {
-	const nextArrow = (props) => {
-		const { className, style, onClick } = props;
+	const NextArrow = (props) => {
+		const { className, onClick } = props;
 		return (
 			<div
-				className={className}
-				style={{ ...style, display: "block", background: "green" }}
+				className='leftarrow'
 				onClick={onClick}
 			/>
 		);
 	}
-	const prevArrow = (props) => {
-		const { className, style, onClick } = props;
+	const PrevArrow = (props) => {
+		const { className, onClick } = props;
 		return (
 			<div
-				className={className}
-				style={{ ...style, display: "block", background: "green" }}
+				className='rightarrow'
 				onClick={onClick}
 			/>
 		);
@@ -33,8 +32,8 @@ function AboutUs() {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: true,
-		nextArrow: <nextArrow />,
-		prevArrow: <prevArrow />
+		nextArrow: <NextArrow />,
+		prevArrow: <PrevArrow />
 	};
 
 	return (
@@ -73,40 +72,9 @@ function AboutUs() {
 										<span className='advantage__positive-reviews--text-two'>300</span>
 										<span className='advantage__positive-reviews--text-thri'>положительных отзывов</span>
 									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div className='aboutus-slider__wrapper'>
-							<div className='aboutus-description__picture'>
-								<img className='aboutus-description__img' src={AboutUsPicture} alt='Картинка слайдера' width='550' height='608'></img>
-							</div>
-							<div className='aboutus-description__wrapper'>
-								<p className='aboutus-description__text'>С 2011 года было нами было разработано уже множество успешных проектов. Мы проектируем подробные проекты дизайна интерьеров помещений любой сложности и не боимся сложных задач.
-									Дизайн-проект может включать в себя перепланировку, рабочие чертежи, 3D-визуализацию, а также дополнителнительные услуги: авторский надзор, подбор материалов, смету и другое на Ваше личное усмотрение.
-									<br />
-									<br />
-									Мы работаем с помещениями любого типа и назначения: квартиры, коттедж, загородный дом, кафе или ресторан, офис, гостиница или бизнес-центр, бутик и многое другое.
-									<br />
-									<br />
-									Мы не упустим ни один квадратный сантиметр, учтем все Ваши пожелания, добавим свои свежие идеи, познакомим с секретами интерьерных решений, скоординируем в ремонте и поможем создать в Вашем помещении утонченную роскошь!
-								</p>
-								<div className='aboutus-description__advantage advantage'>
-									<div className='advantage__wrapper advantage__age'>
-										<span className='advantage__age--text-one'>Более</span>
-										<span className='advantage__age--text-two'>10</span>
-										<span className='advantage__age--text-thri'>лет<br /> на рынке</span>
-									</div>
-									<div className='advantage__successful-projects'>
-										<span className='advantage__successful-projects--text-one'>Более</span>
-										<span className='advantage__successful-projects--text-two'>200</span>
-										<span className='advantage__successful-projects--text-thri'>успешных проектов</span>
-									</div>
-									<div className='advantage__positive-reviews'>
-										<span className='advantage__positive-reviews--text-one'>Более</span>
-										<span className='advantage__positive-reviews--text-two'>300</span>
-										<span className='advantage__positive-reviews--text-thri'>положительных отзывов</span>
+									<div className='slider__decor-text'>
+										<span className='slider__decor-span fontGwendolyn'>Мы создаем прекрасное!</span>
+										<img className='slider__decor-img' src={SliderDecorImg}></img>
 									</div>
 								</div>
 							</div>
@@ -143,13 +111,52 @@ function AboutUs() {
 										<span className='advantage__positive-reviews--text-two'>300</span>
 										<span className='advantage__positive-reviews--text-thri'>положительных отзывов</span>
 									</div>
+									<div className='slider__decor-text'>
+										<span className='slider__decor-span fontCorinthia'>Мы создаем прекрасное!</span>
+										<img className='slider__decor-img' src={SliderDecorImg}></img>
+									</div>
 								</div>
 							</div>
 						</div>
-						{/* <div>
-						<nextArrow />
-						<prevArrow />
-					</div> */}
+					</div>
+					<div>
+						<div className='aboutus-slider__wrapper'>
+							<div className='aboutus-description__picture'>
+								<img className='aboutus-description__img' src={AboutUsPicture} alt='Картинка слайдера' width='550' height='608'></img>
+							</div>
+							<div className='aboutus-description__wrapper'>
+								<p className='aboutus-description__text'>С 2011 года было нами было разработано уже множество успешных проектов. Мы проектируем подробные проекты дизайна интерьеров помещений любой сложности и не боимся сложных задач.
+									Дизайн-проект может включать в себя перепланировку, рабочие чертежи, 3D-визуализацию, а также дополнителнительные услуги: авторский надзор, подбор материалов, смету и другое на Ваше личное усмотрение.
+									<br />
+									<br />
+									Мы работаем с помещениями любого типа и назначения: квартиры, коттедж, загородный дом, кафе или ресторан, офис, гостиница или бизнес-центр, бутик и многое другое.
+									<br />
+									<br />
+									Мы не упустим ни один квадратный сантиметр, учтем все Ваши пожелания, добавим свои свежие идеи, познакомим с секретами интерьерных решений, скоординируем в ремонте и поможем создать в Вашем помещении утонченную роскошь!
+								</p>
+								<div className='aboutus-description__advantage advantage'>
+									<div className='advantage__wrapper advantage__age'>
+										<span className='advantage__age--text-one'>Более</span>
+										<span className='advantage__age--text-two'>10</span>
+										<span className='advantage__age--text-thri'>лет<br /> на рынке</span>
+									</div>
+									<div className='advantage__successful-projects'>
+										<span className='advantage__successful-projects--text-one'>Более</span>
+										<span className='advantage__successful-projects--text-two'>200</span>
+										<span className='advantage__successful-projects--text-thri'>успешных проектов</span>
+									</div>
+									<div className='advantage__positive-reviews'>
+										<span className='advantage__positive-reviews--text-one'>Более</span>
+										<span className='advantage__positive-reviews--text-two'>300</span>
+										<span className='advantage__positive-reviews--text-thri'>положительных отзывов</span>
+									</div>
+									<div className='slider__decor-text'>
+										<span className='slider__decor-span fontCorinthia'>Мы создаем прекрасное!</span>
+										<img className='slider__decor-img' src={SliderDecorImg}></img>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</Slider>
 				<div className='aboutus__buttons'>

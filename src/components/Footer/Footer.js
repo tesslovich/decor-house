@@ -1,4 +1,7 @@
 import './Footer.scss';
+import { data } from '../../pages/mainpage/Production/socialIcon';
+import Map from '../Map/Map';
+
 
 function Footer() {
 	return (
@@ -16,7 +19,17 @@ function Footer() {
 					</div>
 					<div className='coordinates__connection connection'>
 						<div className='connection__title'>Присоединяйтесь</div>
-						<a className='connection__social'></a>
+						<ul className='footer__social'>
+							{data.map((item, index) => {
+								return (
+									<li key={index}>
+										<a className='footer__social-icon' href='#'>
+											<img src={item.logo}></img>
+										</a>
+									</li>
+								)
+							})}
+						</ul>
 					</div>
 					<div className='coordinates__connection connection'>
 						<div className='connection__title'>Написать на почту</div>
@@ -24,7 +37,7 @@ function Footer() {
 					</div>
 				</div>
 				<div className='footer-coordinates__map'>
-
+					<Map />
 				</div>
 			</div>
 			<div className='footer__corporation'>
@@ -36,5 +49,6 @@ function Footer() {
 		</footer>
 	)
 }
+
 
 export default Footer;

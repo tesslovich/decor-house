@@ -1,20 +1,20 @@
-import { ReactComponent as vkLogo } from '../../../images/icon/vkIcon.svg';
-import { ReactComponent as instLogo} from '../../../images/icon/instIcon.svg';
-import { ReactComponent as fbLogo} from '../../../images/icon/fbIcon.svg';
-import { ReactComponent as printerestLogo} from '../../../images/icon/pinterestIcon.svg';
+import VkLogo from '../../../images/icon/vkIcon.svg';
+import InstLogo  from '../../../images/icon/instIcon.svg';
+import FbLogo  from '../../../images/icon/fbIcon.svg';
+import PrinterestLogo from '../../../images/icon/pinterestIcon.svg';
 
 
 export const data = [
 	{
-		"logo": instLogo
+		"logo": InstLogo
 	},
 	{
-		"logo": vkLogo
+		"logo": VkLogo
 	},
 	{
-		"logo": fbLogo
+		"logo": FbLogo
 	},
 	{
-		"logo": printerestLogo
+		"logo": PrinterestLogo
 	},
 ]

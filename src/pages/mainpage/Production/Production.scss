@@ -36,6 +36,9 @@
 	justify-content: flex-end;
 	align-items: center;
 	margin-bottom: 15px;
+	list-style: none;
+	padding: 0;
+	margin: 0;
 
 		&::before {
 			content: '';
@@ -43,13 +46,17 @@
 			border: 1px solid $grey1;
 			width: 75px;
 			transform: rotate(-90deg);
-			top: -30%;
+			top: -60%;
 		}
 }
 
 
 .social__icon {
 	margin-bottom: 12px;
+
+		&:hover {
+			opacity: 0.8;
+		}
 }
 
 
@@ -68,7 +75,7 @@
 	width: 748px;
 	text-transform: uppercase;
 	text-align: center;
-	margin: 185px 0 0 251px;
+	margin: 185px auto 0 auto;
 }
 
 
@@ -78,7 +85,7 @@
 	color: $white;
 	width: 510px;
 	text-align: center;
-	margin: 22px 0 30px 370px;
+	margin: 22px auto 30px auto;
 }
 
 
@@ -86,11 +93,12 @@
 
 
 .production__price {
+	display: block;
 	width: 220px;
 	height: 62px;
 	background-color: $white;
 	color: $black;
-	margin: 0 0 0 515px;
+	margin: 0 auto 0 auto;
 	border-radius: 50px;
 	border: none;
 	font-size: 14px;

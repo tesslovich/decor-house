@@ -30,8 +30,74 @@
 
 
 .aboutus-slider__wrapper {
+	position: relative;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+}
+
+
+.leftarrow {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background-color: $grey1;
+	bottom: 5%;
+	right: 41%;
+	border-radius: 20px;
+	z-index: 10;
+
+	&::before {
+			content: '';
+			position: absolute;
+			background-image: url('../../../images/svg/arrowRight.svg');
+			width: 9px;
+			height: 14px;
+			top: 50%;
+			left: 50%;
+			transform:translate(-50%, -50%);
+		}
+}
+
+
+.rightarrow {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background-color: $grey1;
+	bottom: 5%;
+	right: 46%;
+	border-radius: 20px;
+	z-index: 10;
+
+		&::before {
+			content: '';
+			position: absolute;
+			background-image: url('../../../images/svg/arrowLeft.svg');
+			width: 9px;
+			height: 14px;
+			top: 50%;
+			left: 50%;
+			transform:translate(-50%, -50%);
+		}
+}
+
+
+.slider__decor-text {
+	position: absolute;
+	@include flexCenter;
+	right: 0%;
+	bottom: 0%;
+	font-size: 16px;
+	line-height: 25px;
+	color: $grey1;
+}
+
+
+.slider__decor-img {
+	width: 84px;
+	height: 67px;
+	margin-left: 100px;
+	padding-right: 20px;
 }
 
 
@@ -111,3 +177,4 @@
 .aboutus__button--first {
 	margin-right: 75px;
 }
+

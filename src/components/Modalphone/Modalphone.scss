@@ -1,0 +1,65 @@
+@import '../../styles/common.scss';
+
+
+.modal-phone__open {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 440px;
+	height: 308px;
+	background-color: $grey1;
+	display: flex;
+	flex-direction: column;
+	transform: translate(-50%, -50%);
+}
+
+
+.modal-phone__title {
+	font-size: 20px;
+	line-height: 23px;
+	text-align: center;
+	font-weight: 500;
+	color: $black;
+	margin: 32px auto 15px auto;
+}
+
+
+.modal-phone__text {
+	font-size: 16px;
+	line-height: 22px;
+	text-align: center;
+	color: $black;
+	width: 282px;
+	margin: 0 auto 16px auto;
+}
+
+
+.modal-phone__telephone {
+	width: 309px;
+	height: 65px;
+	border-radius: 5px;
+	background-color: $white;
+	border: none;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 16px;
+	line-height: 19px;
+}
+
+
+.button-submit {
+	width: 309px;
+	height: 65px;
+	border-radius: 5px;
+	background-color: $black;
+	font-size: 16px;
+	line-height: 19px;
+	color: $white;
+	border: none;
+	margin: 12px auto;
+}
+
+
+.modal-phone__close {
+
+}
