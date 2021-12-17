@@ -1,0 +1,85 @@
+@import '../../../styles/common.scss';
+
+.rates {
+	width: 100%;
+	margin-bottom: 247px;
+}
+
+
+.rates__wrapper {
+		width: 80%;
+		margin: 30px auto 0 auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-gap: 30px;
+}
+
+
+.rates__card {
+	padding-top: 10px;
+	background-color: $white;
+	height: 665px;
+	position: relative;
+}
+
+
+.rates__title-card {
+	font-size: 20px;
+	line-height: 26px;
+	color: $black;
+	height: 63px;
+	margin: 0;
+}
+
+
+.card-title__wrapper {
+	background-color: $grey1;
+	text-align: center;
+	font-size: 12px;
+	line-height: 26px;
+	height: 63px;
+}
+
+
+.rates__description {
+	font-size: 8px;
+	line-height: 12px;
+	text-align: center;
+}
+
+
+.rates__square {
+	text-align: center;
+	display: block;
+	font-weight: bold;
+}
+
+
+.rates__subtitle {
+	font-size: 10px;
+	line-height: 12px;
+	text-align: center;
+}
+
+
+.job-descriptions__element {
+	display: block;
+	font-size: 10px;
+	line-height: 20px;
+	color: $defaultblack;
+}
+
+
+.card__btn {
+	width: 220px;
+	height: 47px;
+	border-radius: 5px;
+	background-color: $black;
+	font-size: 14px;
+	line-height: 16px;
+	color: $white;
+	border: none;
+	position: absolute;
+	bottom: 13px;
+	left: 20%;
+}

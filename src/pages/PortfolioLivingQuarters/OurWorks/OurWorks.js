@@ -1,12 +1,13 @@
-import './Project.scss';
-import { data } from './photos';
+import react from "react";
+import './OurWorks.scss';
+import { data } from '../../mainpage/Project/photos';
 import Button from '../../../components/Button/Button';
-import SectionTitle from '../../../components/SectionTitle/SectionTitle';
+import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 
-function Project() {
+function OurWorks() {
 	return (
 		<section className='project'>
-			<SectionTitle>Наши проекты</SectionTitle>
+			<SectionTitle>Наши работы по дизайну интерьера квартир и домов</SectionTitle>
 			<div className='project__gallery gallery'>
 				{data.map((item, index) => {
 					return (
@@ -21,11 +22,10 @@ function Project() {
 				})}
 			</div>
 			<div className='project__buttons'>
-				<Button className='project__button--first'>Жилые помещения</Button>
 				<Button>Коммерческие помещения</Button>
 			</div>
 		</section>
 	)
 }
 
-export default Project;
+export default OurWorks;

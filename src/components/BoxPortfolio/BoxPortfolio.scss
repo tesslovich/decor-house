@@ -1,0 +1,53 @@
+@import '../../styles/common.scss';
+
+.box-portfolio {
+	margin: 0 auto;
+	width: 1170px;
+	height: 505px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-bottom: 257px;
+}
+
+
+.box-portfolio__inquiry {
+	background-color: $grey1;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.box-portfolio__description {
+	font-size: 27px;
+	line-height: 32px;
+	color: $black;
+	font-weight: bold;
+	margin: 97px auto 41px auto;
+	width: 452px;
+}
+
+
+.inquiry__tel {
+	width: 309px;
+	height: 65px;
+	background-color: $white;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	margin: 0 0 12px 60px;
+	text-align: center;
+}
+
+
+.inquiry__btn {
+	width: 309px;
+	height: 65px;
+	background-color: $black;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	margin: 0 0 12px 60px;
+	color: $white;
+	font-size: 16px;
+	line-height: 19px;
+}

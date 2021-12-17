@@ -2,7 +2,7 @@ import React from 'react';
 import './Header.scss';
 import logo from '../../images/icon/logoIcon.svg'
 import { ReactComponent as PhoneIcon } from '../../images/icon/phoneIcon.svg';
-
+import { NavLink } from 'react-router-dom';
 
 function Header() {
 	return (
@@ -12,22 +12,22 @@ function Header() {
 				<nav className='header__main-nav main-nav'>
 					<ul className='main-nav__list'>
 						<li className='main-nav__item'>
-							<a className='main-nav__item-link' href='#'>Услуги</a>
+							<NavLink className='main-nav__item-link' to='/serv' >Услуги</NavLink>
 						</li>
 						<li className='main-nav__item'>
-							<a className='main-nav__item-link' href='#'>Ремонт</a>
+							<NavLink className='main-nav__item-link' to='/RepairAdvantagePage'>Ремонт</NavLink>
 						</li>
 						<li className='main-nav__item'>
-							<a className='main-nav__item-link' href='#'>Портфолио</a>
+							<NavLink className='main-nav__item-link' to='/PortfolioLivingQuartersPage'>Портфолио</NavLink>
 						</li>
 						<li className='main-nav__item'>
-							<a className='main-nav__item-link' href='#'>О нас</a>
+							<NavLink className='main-nav__item-link' to='/AboutUsPage'>О нас</NavLink>
 						</li>
 						<li className='main-nav__item'>
-							<a className='main-nav__item-link' href='#'>Статьи</a>
+							<NavLink className='main-nav__item-link' to='/ArticlesPage'>Статьи</NavLink>
 						</li>
 						<li className='main-nav__item'>
-							<a className='main-nav__item-link' href='#'>Контакты</a>
+							<NavLink className='main-nav__item-link' to='/cont'>Контакты</NavLink>
 						</li>
 					</ul>
 				</nav>

@@ -1,12 +1,12 @@
-import './Project.scss';
-import { data } from './photos';
+import './SuccessfulProjects.scss';
+import { data } from '../../mainpage/Project/photos';
 import Button from '../../../components/Button/Button';
 import SectionTitle from '../../../components/SectionTitle/SectionTitle';
 
-function Project() {
+function SuccessfulProjects() {
 	return (
-		<section className='project'>
-			<SectionTitle>Наши проекты</SectionTitle>
+		<section className='successful-project'>
+			<SectionTitle>Более 900 успешных проектов</SectionTitle>
 			<div className='project__gallery gallery'>
 				{data.map((item, index) => {
 					return (
@@ -28,4 +28,4 @@ function Project() {
 	)
 }
 
-export default Project;
+export default SuccessfulProjects;

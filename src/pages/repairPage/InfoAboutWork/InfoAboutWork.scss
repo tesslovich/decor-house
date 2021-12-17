@@ -1,0 +1,33 @@
+@import '../../../styles/common.scss';
+
+.info-about-work {
+	width: 80%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 0 auto 120px auto;
+	grid-row-gap: 58px;
+}
+
+
+.info-about-work__wrapper {
+	width: 570px;
+}
+
+
+.info-about-work__icon {
+	margin-bottom: 51px;
+}
+
+
+.info-about-work__title {
+	font-size: 18px;
+	line-height: 21px;
+	color: $white;
+}
+
+
+.info-about-work__description {
+	font-size: 14px;
+	line-height: 24px;
+	color: $lightdarkwhite;
+}

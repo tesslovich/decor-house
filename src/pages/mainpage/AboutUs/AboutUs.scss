@@ -9,22 +9,11 @@
 
 
 .aboutus__title {
-	position: relative;
-	font-size: 40px;
-	line-height: 46px;
-	width: 604px;
-	margin: 0 auto;
 	text-align: center;
-	color: $white;
-	padding-bottom: 55px;
+	margin-bottom: 34px;
 
 		&::after {
-			content: '';
-			position: absolute;
-			border: 1px solid $grey1;
-			width: 196%;
-			bottom: 15%;
-			left: -290px;
+			width: 100%;
 		}
 }
 

@@ -1,0 +1,72 @@
+@import '../../../styles/common.scss';
+
+.repair-time {
+	margin-top: 133px;
+	width: 100%;
+	margin-bottom: 236px;
+}
+
+
+.repair-time__title {
+		&::after {
+			display: none;
+		}
+}
+
+
+.repair-time__repair-type {
+	width: 80%;
+	margin: 0 auto 16px auto;
+	text-align: center;
+}
+
+
+.repair-time__repair-type button {
+	width: 50%;
+	height: 60px;
+	font-family: 'Cormorant Garamond', sans-serif;
+	color: $black;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+
+.repair-time__table {
+	margin: 0 auto;
+	background-color: $lightwhite;
+	border-radius: 5px;
+	width: 80%;
+	height: 369px;
+}
+
+
+.tablet__area-volume {
+	display: flex;
+	flex-direction: column;
+}
+
+
+.table__titles {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 51px;
+	margin-bottom: 48px;
+}
+
+
+.table__title {
+	width: 195px;
+	text-align: center;
+}
+
+
+.table__content {
+	display: flex;
+	justify-content: space-around;
+}
+
+
+.table__content div {
+	margin-bottom: 30px;
+}

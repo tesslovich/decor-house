@@ -1,0 +1,21 @@
+@import '../../styles/common.scss';
+
+.section-title {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	color: $grey1;
+	font-size: 40px;
+	line-height: 45px;
+	padding-bottom: 30px;
+	margin: 0;
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 80%;
+			height: 1px;
+			border-bottom: 1px solid $grey1;
+			bottom: 0;
+		}
+}

@@ -1,0 +1,41 @@
+@import '../../../styles/common.scss';
+
+.repair-advantage {
+	width: 100%;
+	height: 689px;
+	color: $white;
+}
+
+
+.repair-advantage__wrapper {
+	background-image: url('../../../images/mainImg/repairPageBackgroundImg.png');
+	height: 332px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+.repair-advantage__description {
+	padding: 130px 0 0 0;
+	margin: 0;
+	@include flexCenter;
+	font-size: 14px;
+	line-height: 28px;
+}
+
+
+.repair-advantage__title {
+	margin: 15px 0 0 0;
+	@include flexCenter;
+	font-size: 40px;
+	line-height: 45px;
+}
+
+
+.repair-advantage__text {
+	width: 751px;
+	text-align: center;
+	font-size: 16px;
+	line-height: 26px;
+	margin: 212px auto 0 auto;
+}

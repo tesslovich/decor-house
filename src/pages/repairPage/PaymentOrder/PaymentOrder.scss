@@ -1,0 +1,62 @@
+@import '../../../styles/common.scss';
+
+.payment-order {
+	width: 100%;
+	height: 289px;
+	margin-top: 174px;
+	color: $white;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+
+.payment-order__title {
+	&::after {
+		display: none;
+	}
+}
+
+.payment-order__wrapper {
+	width: 80%;
+	display: flex;
+	margin: 20px auto 0 auto;
+	justify-content: space-between;
+}
+
+
+.payment-order__contract {
+	width: 50%;
+}
+
+
+.guarantees {
+	width: 50%;
+}
+
+
+.contract__description {
+	margin: 0 0 17px 0;
+}
+
+
+.prepayment {
+	display: flex;
+	margin: 0 0 17px 0;
+}
+
+
+.prepayment__procent {
+	margin: 0 15px 0 0;
+	font-size: 30px;
+	line-height: 26px;
+}
+
+
+.prepayment__text {
+	margin: 0;
+}
+
+
+.guarantees__description {
+	margin: 0;
+}

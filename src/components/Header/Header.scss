@@ -30,23 +30,19 @@
 	display: block;
 	margin: 0 40px 0 0;
 
-		&:hover {
-			color: $white;
-			border-bottom: 1px solid $white;
-		}
-
-		&:active {
-			color: $white;
-		}
+		
 }
 
 
 .main-nav__item-link {
 	text-decoration: none;
 	color: $grey1;
+	padding-bottom: 5px;
 
-	&:hover {
+	&:hover, &.active {
 		color: $white;
+		border-bottom: 1px solid $white;
+		
 	}
 }
 

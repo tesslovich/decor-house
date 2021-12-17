@@ -1,0 +1,69 @@
+@import '../../../styles/common.scss';
+
+.description {
+	position: relative;
+	width: 100%;
+	height: 2309px;
+	background-image: url('../../../images/svg/descriptionPageBacground.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding-bottom: 150px;
+}
+
+
+.description__header {
+	width: 962px;
+	font-size: 16px;
+	line-height: 26px;
+	color: $white;
+	background-color: $black;
+	position: absolute;
+	top: 2%;
+	left: 5%;
+	padding: 71px 104px 40px 104px;
+}
+
+
+.description__wrapper-picture {
+	position: absolute;
+	top: 25%;
+}
+
+
+.description__services {
+	position: absolute;
+	color: $black;
+	top: 40%;
+	right: 30%;
+}
+
+
+.services__title{
+	font-size: 50px;
+	line-height: 70px;
+	text-align: center;
+}
+
+
+.description__services-text {
+	width: 743px;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+
+.description__footer {
+	position: absolute;
+	bottom: 3%;
+	background-color: #191919;
+	left: 18%;
+	width: 743px;
+	padding: 91px 110px 22px 317px;
+}
+
+
+.description__footer-text {
+	color: $white;
+	font-size: 16px;
+	line-height: 26px;
+}

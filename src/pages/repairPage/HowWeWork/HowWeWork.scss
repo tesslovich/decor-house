@@ -1,0 +1,27 @@
+@import '../../../styles/common.scss';
+
+.how-we-work {
+	width: 100%;
+	margin-bottom: 107px;
+}
+
+
+.how-we-work__wrapper {
+	margin: 50px auto 0 auto;
+	width: 80%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 39px;
+}
+
+
+.how-we-work__img {
+	width: 542px;
+}
+
+
+.how-we-work_-description {
+	font-size: 16px;
+	line-height: 26px;
+	color: $white;
+}

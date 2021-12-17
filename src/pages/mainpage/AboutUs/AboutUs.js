@@ -5,6 +5,8 @@ import Slider from "react-slick";
 import AboutUsPicture from '../../../images/gallery/aboutUsImg.png';
 import Button from '../../../components/Button/Button';
 import SliderDecorImg from '../../../images/svg/sliderDecorText.svg';
+import SectionTitle from "../../../components/SectionTitle/SectionTitle";
+
 
 import './AboutUs.scss';
 
@@ -38,7 +40,7 @@ function AboutUs() {
 
 	return (
 		<section className='aboutus'>
-			<h2 className='aboutus__title fontGaramond'>Лучшие решения, актуальный дизайн, непревзойденное качество — все это о нашей студии</h2>
+			<SectionTitle className='aboutus__title'>Лучшие решения, актуальный<br /> дизайн, непревзойденное качество<br /> — все это о нашей студии</SectionTitle>
 			<div className='aboutus__wrapper'>
 				<Slider {...settings}>
 					<div>
@@ -160,7 +162,7 @@ function AboutUs() {
 					</div>
 				</Slider>
 				<div className='aboutus__buttons'>
-					<Button className='aboutus__button--first'>О нас</Button>
+					<Button className='aboutus__button--first' to='/AboutUsPage'>О нас</Button>
 					<Button>Наши услуги</Button>
 				</div>
 			</div>

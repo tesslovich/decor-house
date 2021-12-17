@@ -7,31 +7,11 @@
 }
 
 
-.project__title {
-	position: relative;
-	font-size: 40px;
-	line-height: 45px;
-	display: flex;
-	justify-content: center;
-	padding: 0 0 58px 0;
-	color: $grey1;
-	margin: 0;
-
-		&::before {
-			content: '';
-			position: absolute;
-			border: 1px solid $grey1;
-			width: 83%;
-			bottom: 25px;
-		}
-}
-
-
 .project__gallery {
 	width: 83%;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	margin: 0 auto;
+	margin: 34px auto 0 auto;
 	grid-gap: 30px;
 }
 

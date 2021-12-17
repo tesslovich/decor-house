@@ -1,0 +1,21 @@
+@import '../../../styles/common.scss';
+
+.preview {
+	width: 100%;
+	background-image: url('../../../images/mainImg/previewPortfoloiQuarters.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 332px;
+	margin-bottom: 106px;
+}
+
+
+.preview__description {
+	font-size: 14px;
+	line-height: 22px;
+	color: $white;
+	width: 829px;
+	margin: 0 auto;
+	padding-top: 75px;
+	text-align: center;
+}

@@ -1,0 +1,70 @@
+@import '../../../styles/common.scss';
+
+.articles {
+	width: 100%;
+	margin-top: 92px;
+	margin-bottom: 200px;
+}
+
+
+.article__cards {
+	width: 80%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 30px;
+}
+
+
+.article__card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+.article__card-title {
+	font-size: 20px;
+	line-height: 22px;
+	color: $white;
+	font-weight: 400;
+	margin: 36px 0 0 0;
+}
+
+
+.article__card-description {
+	font-size: 14px;
+	line-height: 22px;
+	color: $white;
+	width: 370px;
+	margin: 18px 0 34px 0;
+}
+
+
+.article__card-link {
+	position: relative;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 16px;
+	color: $grey1;
+	display: flex;
+  justify-content: flex-end;
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 75%;
+			border-bottom: 1px solid $grey1;
+			bottom: 50%;
+			left: 0;
+		}
+}
+
+
+.articles__buttons {
+	width: 80%;
+	margin: 162px auto 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}

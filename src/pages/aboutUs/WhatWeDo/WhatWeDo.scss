@@ -1,0 +1,26 @@
+@import '../../../styles/common.scss';
+
+.what-we-do {
+	width: 100%;
+	margin-bottom: 205px;
+}
+
+
+.what-we-do__wrapper {
+	width: 80%;
+	display: flex;
+	margin: 32px auto 0 auto;
+	justify-content: space-around;
+}
+
+
+.what-we-do__description {
+	width: 100%;
+	background-color: $grey1;
+	font-size: 16px;
+	line-height: 18px;
+	padding: 70px 45px 90px 65px;
+	font-weight: bold;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}

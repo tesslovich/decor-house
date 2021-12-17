@@ -1,19 +1,17 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './App.scss';
 import './styles/common.scss';
+import { BrowserRouter as Router, Switch, Route, Link, Routes, NavLink } from "react-router-dom";
 import Header from './components/Header/Header';
-import Production from './pages/mainpage/Production/Production';
-import Project from './pages/mainpage/Project/Project';
-import AboutUs from './pages/mainpage/AboutUs/AboutUs';
-import PreliminaryInformation from './pages/mainpage/PreliminaryInformation/PreliminaryInformation';
-import Desing from './pages/mainpage/Desing/Desing';
-import UsefulInfo from './pages/mainpage/UsefulInfo/UsefulInfo';
-import RepairInfo from './pages/mainpage/RepairInfo/RepairInfo';
-import Partners from './pages/mainpage/Partners/Partners';
 import Footer from './components/Footer/Footer';
 import Modalphone from './components/Modalphone/Modalphone';
 import eventBus from './helpers/eventBus';
 import Modalthanks from './components/Modalthanks/Modalthanks';
+import RepairAdvantagePage from './pages/repairPage/RepairAdvantagePage';
+import MainPage from './pages/mainpage';
+import AboutUsPage from './pages/aboutUs/aboutUsPage';
+import PortfolioLivingQuartersPage from './pages/PortfolioLivingQuarters/PortfolioLivingQuartersPage'
+import ArticlesPage from './pages/Articles/ArticlesPage';
 
 
 function App() {
@@ -30,20 +28,19 @@ function App() {
 		setShowModalThanks(true);
 	})
 	return (
-		<div>
+		<Router>
 			<Header></Header>
-			<Production></Production>
-			<Project></Project>
-			<AboutUs></AboutUs>
-			<PreliminaryInformation></PreliminaryInformation>
-			<Desing></Desing>
-			<UsefulInfo></UsefulInfo>
-			<RepairInfo></RepairInfo>
-			<Partners></Partners>
-			<Footer></Footer>
 			{showModal && <Modalphone></Modalphone>}
 			{showModalThanks && <Modalthanks></Modalthanks>}
-		</div>
+			<Routes>
+				<Route exact path='/' element={<MainPage />} />
+				<Route exact path='/RepairAdvantagePage' element={<RepairAdvantagePage />} />
+				<Route exact path='/AboutUsPage' element={<AboutUsPage />} />
+				<Route exact path='/PortfolioLivingQuartersPage' element={<PortfolioLivingQuartersPage />} />
+				<Route exact path='/ArticlesPage' element={<ArticlesPage />} />
+			</Routes>
+			<Footer></Footer>
+		</Router>
 	);
 }
 
