@@ -1,0 +1,29 @@
+@import '../../../styles/common.scss';
+
+.for-partners {
+	width: 100%;
+	margin-top: 81px;
+	margin-bottom: 115px;
+}
+
+
+.for-partners__wrapper {
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+.for-partners__title {
+	font-size: 30px;
+	line-height: 28px;
+	margin: 0;
+	color: $white;
+}
+
+
+.for-partners__description {
+	margin: 30px 0 0 0;
+	font-size: 20px;
+	line-height: 32px;
+	color: $grey1;
+}

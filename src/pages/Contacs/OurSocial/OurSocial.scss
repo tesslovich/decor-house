@@ -1,0 +1,43 @@
+@import '../../../styles/common.scss';
+
+.our-social {
+	width: 100%;
+	color: $white;
+	margin-bottom: 140px;
+}
+
+.our-social__wrapper {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.our-social__links {
+	width: 50%;
+}
+
+
+.our-social__description {
+	width: 50%;
+}
+
+
+.our-social__links-title {
+	font-size: 30px;
+	line-height: 28px;
+	margin: 0 0 49px 0;
+}
+
+
+.our-social__description-title {
+	font-size: 30px;
+	line-height: 42px;
+	margin: 0 0 83px 0;
+}
+
+
+.our-social__decor-content {
+	font-size: 20px;
+	line-height: 36px;
+}

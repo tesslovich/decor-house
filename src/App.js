@@ -12,6 +12,7 @@ import MainPage from './pages/mainpage';
 import AboutUsPage from './pages/aboutUs/aboutUsPage';
 import PortfolioLivingQuartersPage from './pages/PortfolioLivingQuarters/PortfolioLivingQuartersPage'
 import ArticlesPage from './pages/Articles/ArticlesPage';
+import ContacsPage from './pages/Contacs/ContacsPage';
 
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
 				<Route exact path='/AboutUsPage' element={<AboutUsPage />} />
 				<Route exact path='/PortfolioLivingQuartersPage' element={<PortfolioLivingQuartersPage />} />
 				<Route exact path='/ArticlesPage' element={<ArticlesPage />} />
+				<Route exact path='/ContacsPage' element={<ContacsPage />} />
 			</Routes>
 			<Footer></Footer>
 		</Router>
