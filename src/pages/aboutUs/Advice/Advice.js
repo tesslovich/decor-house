@@ -26,7 +26,7 @@ function Advice() {
 						<div className='advice-card' key={index}>
 							<div className='advice-card__title-wrapper' onClick={() => toogle(index)}>
 								<h3 className='advice-card__title fontGaramond'>{item.title}</h3>
-								<span>{selected === index ? '-' : '+'}</span>
+								<span className='advice-card__toogle'>{selected === index ? '-' : '+'}</span>
 							</div>
 							<div className={selected === index ? 'advice-card__content-show' : 'advice-card__content'}>{item.description}</div>
 						</div>

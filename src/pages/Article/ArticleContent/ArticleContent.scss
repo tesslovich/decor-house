@@ -1,0 +1,28 @@
+@import '../../../styles/common.scss';
+
+.article-content {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 90px;
+	margin-bottom: 200px;
+	color: $white;
+}
+
+
+.article-content_-title {
+	font-size: 30px;
+	line-height: 28px;
+}
+
+
+.article-content__content {
+	font-size: 14px;
+	line-height: 24px;
+}
+
+
+.article-content__button-wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 240px;
+}

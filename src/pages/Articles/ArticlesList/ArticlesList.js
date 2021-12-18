@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import Button from '../../../components/Button/Button';
 import './ArticlesList.scss';
 import { data } from './DataArticlesList';
@@ -12,8 +13,11 @@ function ArticlesList() {
 							<img className='article__card-picture' src={item.picture} alt='Картинка о статье'></img>
 							<h3 className='article__card-title fontGaramond'>{item.title}</h3>
 							<p className='article__card-description'>{item.description}</p>
-							<a href='#' className='article__card-link'>Подробнее</a>
+							<NavLink to='/ArticlePage'>
+								<a href='#' className='article__card-link'>Подробнее</a>
+							</NavLink>
 						</div>
+
 					)
 				})}
 			</div>

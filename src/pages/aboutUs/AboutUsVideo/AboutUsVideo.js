@@ -11,7 +11,7 @@ function AboutUsVideo() {
 	}
 	return (
 		<section className='about-us-video'>
-			<YouTube videoId='v=64KAAl2Uz5g' opts={opts} />
+			<YouTube videoId='64KAAl2Uz5g' opts={opts} />
 		</section>
 	)
 }

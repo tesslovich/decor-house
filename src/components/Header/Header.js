@@ -8,7 +8,9 @@ function Header() {
 	return (
 		<header className='header'>
 			<div className='header__wrapper'>
-				<img className='header__logo' src={logo}></img>
+				<NavLink to='/'>
+					<img className='header__logo' src={logo}></img>
+				</NavLink>
 				<nav className='header__main-nav main-nav'>
 					<ul className='main-nav__list'>
 						<li className='main-nav__item'>
